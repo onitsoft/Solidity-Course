@@ -10,7 +10,7 @@ To put it short and simple, smart contract is code that automates "if this happe
 
 To put it another way, smart contract is a piece of code that is stored on an blockchain, triggered by blockchain transactions and which reads and writes data in that blockchain's database.
 
-When you put $2 coin in a vending machine, you participate in an implicit contract between a vending machine and yourself so that if you put $2, you get a coke.
+When you put $2 coin in a vending machine, you participate in an implicit contract between a vending machine and yourself so that if you put $2, you get a coke. Smart contracts are similar to that.
 
 ## Explanation from Vitalik
 
@@ -23,6 +23,7 @@ Asset in this case could be anything. It could be a bet you made on a betting sy
 - Computer code behaves in expected ways and doesn’t have the linguistic nuances of human languages.
 - The code is replicated on many computers giving contract security and immutability.
 - Smart contract can be verified on a public ledger.
+- Fewer intermediaries e.g. no need for external "escrow" services.
 - Useful for trustless systems where you have multiple parties that do not trust each other 100%.
 
 ## Cons of smart contracts
@@ -32,12 +33,24 @@ Asset in this case could be anything. It could be a bet you made on a betting sy
 
 ## Example of a smart contract
 
-Suppose you rent an apartment from me. You can do this through the blockchain by paying in cryptocurrency. You get a receipt which is held in our virtual contract; I give you the digital entry key which comes to you by a specified date. If the key doesn’t come on time, the blockchain releases a refund. If I send the key before the rental date, the function holds it releasing both the fee and key to you and me respectively when the date arrives. The system works on the If-Then premise and is witnessed by hundreds of people, so you can expect a faultless delivery. If I give you the key, I’m sure to be paid. If you send a certain amount in bitcoins, you receive the key. The document is automatically canceled after the time, and the code cannot be interfered by either of us without the other knowing since all participants are simultaneously alerted.
+Suppose you rent a car for me which can be opened with an app. First, you pay me in Bitcoin. Then get a receipt which is held in our virtual contract; I give you the digital entry key which comes to you by a specified date and time. If the key doesn’t come on time, the blockchain releases a refund. If I send the key before the rental date, the function holds it releasing both the fee to me, and the key to you, when the date arrives. 
 
-You can use smart contracts for all sort of situations that range from financial derivatives to insurance premiums, breach contracts, property law, credit enforcement, financial services, legal processes and crowdfunding agreements.
+The system works on the If-Then premise and is witnessed by hundreds of people on a public ledger, so you can expect a faultless delivery. If I give you the key, I’m sure to be paid. If you send a certain amount in bitcoins, you receive the key. The document is automatically canceled after the time, and the code cannot be interfered by either of us without the other knowing since all participants are simultaneously alerted.
+
+## Application areas
+
+- Financial services - insurance, coupon payments, trade clearing and settlement;
+- Health care - electronic medical records, population health data access, personal health tracking;
+- Entertainment - royalty distribution;
+- Energy and resources - autonomous electric vehicle charging stations;
+- Supply chain record keeping;
+- Peer-to-peer transacting - lending, insurance, energy credits, etc;
+- Voting;
+- Crowdfunding agreements.
 
 ## Resources
 
 - https://blockgeeks.com/guides/smart-contracts/
 - https://bitsonblocks.net/2016/02/01/a-gentle-introduction-to-smart-contracts/
 - https://medium.freecodecamp.org/smart-contracts-for-dummies-a1ba1e0b9575 - good gentrle introduction to smart contracts
+- https://dupress.deloitte.com/dup-us-en/focus/signals-for-strategists/using-blockchain-for-smart-contracts.html
