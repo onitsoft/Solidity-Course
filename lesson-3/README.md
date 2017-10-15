@@ -16,7 +16,7 @@
 4. Install *testrpc* by typing `npm install -g ethereumjs-testrpc`.
 5. Install *truffle* by typing `npm install -g truffle`.
 
-## Windows installation instructions (COMING SOON)
+## Windows installation instructions
 
 1. Install *Node.js* by going to [Node.js latest installer](https://nodejs.org/en/download/current/) and downloading the latest version.
 2. Install *Geth* by going to [Geth installer](https://geth.ethereum.org/downloads/) and downloading the latest version.
