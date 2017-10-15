@@ -12,11 +12,11 @@ To put it another way, smart contract is a piece of code that is stored on an bl
 
 When you put $2 coin in a vending machine, you participate in an implicit contract between a vending machine and yourself so that if you put $2, you get a coke. Smart contracts are similar to that.
 
-## Explanation from Vitalik
+## Example of a smart contract
 
-As Vitalik Buterin, the creator of Ethereum himself, explains that in a smart contract approach, an asset or currency is transferred into a program “and the program runs this code and at some point it automatically validates a condition and it automatically determines whether the asset should go to one person or back to the other person, or whether it should be immediately refunded to the person who sent it or some combination thereof.
+Suppose you rent a car for me which can be opened with an app. First, you pay me in Bitcoin. Then you get a receipt which is held in our virtual contract; I give you the digital entry key which comes to you by a specified date and time. If the key doesn’t come on time, the blockchain releases a refund. If I send the key before the rental date, the function holds it releasing both the fee to me, and the key to you, when the date arrives. 
 
-Asset in this case could be anything. It could be a bet you made on a betting system. It could be your driver's license. It could be a proof that you sent the goods in a post office. It could be stocks. It could be your computer resources that you spent to do a certain task.
+The system works on the If-Then premise and is witnessed by hundreds of people on a public ledger, so you can expect a faultless delivery. If I give you the key, I’m sure to be paid. If you send a certain amount in bitcoins, you receive the key. The document is automatically canceled after the time, and the code cannot be interfered by either of us without the other knowing since all participants are simultaneously alerted.
 
 ## Pros of smart contracts
 
@@ -30,12 +30,6 @@ Asset in this case could be anything. It could be a bet you made on a betting sy
 
 - In some cases a trusted entity is still required to make smart contracts. For example, if smart contracts relies on weather conditions, and we know that each node in a network must agree on the same conditions or else the contract won't execute, we need a trusted party to whom we ask about the weather data rather than each contract fetching weather data from some random weather API which could return different results to two different nodes.
 - Hiding confidential data. For example, if 10 banks set up a blockchain together, and 2 banks made a bilateral transaction, it will be immediately obvious to other 8 banks.
-
-## Example of a smart contract
-
-Suppose you rent a car for me which can be opened with an app. First, you pay me in Bitcoin. Then get a receipt which is held in our virtual contract; I give you the digital entry key which comes to you by a specified date and time. If the key doesn’t come on time, the blockchain releases a refund. If I send the key before the rental date, the function holds it releasing both the fee to me, and the key to you, when the date arrives. 
-
-The system works on the If-Then premise and is witnessed by hundreds of people on a public ledger, so you can expect a faultless delivery. If I give you the key, I’m sure to be paid. If you send a certain amount in bitcoins, you receive the key. The document is automatically canceled after the time, and the code cannot be interfered by either of us without the other knowing since all participants are simultaneously alerted.
 
 ## Application areas
 
