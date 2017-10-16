@@ -45,5 +45,5 @@ The system works on the If-Then premise and is witnessed by hundreds of people o
 
 - https://blockgeeks.com/guides/smart-contracts/
 - https://bitsonblocks.net/2016/02/01/a-gentle-introduction-to-smart-contracts/
-- https://medium.freecodecamp.org/smart-contracts-for-dummies-a1ba1e0b9575 - good gentrle introduction to smart contracts
+- https://medium.freecodecamp.org/smart-contracts-for-dummies-a1ba1e0b9575
 - https://dupress.deloitte.com/dup-us-en/focus/signals-for-strategists/using-blockchain-for-smart-contracts.html
