@@ -10,7 +10,7 @@
 
 ## Mac installation instructions
 
-1. Install *[Homebrew](https://brew.sh/)* by copying command `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` into terminal prompt.
+1. Install *Homebrew* by copying command `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` into terminal prompt.
 2. Install *Node.js* by typing `brew install node`.
 3. Install *Geth* by first typing `brew tap ethereum/ethereum`. Then `brew install ethereum`.
 4. Install *testrpc* by typing `npm install -g ethereumjs-testrpc`.
@@ -24,3 +24,9 @@
 4. Install *truffle* by typing `npm install -g truffle`.
 
 ## Linux installation instructions (COMING SOON)
+
+1. Install curl if you haven't got it already by typing `sudo apt install curl`
+2. Install *Node.js* by first typing `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -` which will fetch source files for the apt package. Then type `sudo apt update` and `sudo apt-get install -y nodejs` after that. For latest instructions you can always go to [official Node.js insllation isntructions](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
+3. Install *Geth* by first typing `sudo add-apt-repository -y ppa:ethereum/ethereum` to add Ethereum to apt source list. Then `sudo apt update` and finally `sudo apt install ethereum`.
+4. Install *testrpc* by typing `sudo npm install -g ethereumjs-testrpc`.
+5. Install *truffle* by typing `sudo npm install -g truffle`.
