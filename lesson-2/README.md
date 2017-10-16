@@ -22,7 +22,6 @@ The system works on the If-Then premise and is witnessed by hundreds of people o
 
 - Computer code behaves in expected ways and doesn’t have the linguistic nuances of human languages.
 - The code is replicated on many computers giving contract security and immutability.
-- Smart contract can be verified on a public ledger.
 - Fewer intermediaries e.g. no need for external "escrow" services.
 - Useful for trustless systems where you have multiple parties that do not trust each other 100%.
 
