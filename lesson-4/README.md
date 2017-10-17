@@ -52,7 +52,7 @@ contract Integers {
 
 However, fixed point numbers are not fully supported by Solidity yet. They can be declared, but cannot be assigned to or from.
 
-So if you want to use float type division in Solidity, different size units will be have to be used.
+So if you want to use float type division in Solidity, different size units have to be used.
 
 ### Bytes
 
