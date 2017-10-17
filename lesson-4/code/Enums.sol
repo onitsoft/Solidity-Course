@@ -5,8 +5,8 @@ contract Enums {
     ActionChoices choice;
     ActionChoices constant defaultChoice = ActionChoices.GoStraight;
 
-    function setGoStraight() {
-        choice = ActionChoices.GoStraight;
+    function setSitStill() {
+        choice = ActionChoices.SitStill;
     }
 
     // Since enum types are not part of the ABI, the signature of "getChoice"

@@ -56,7 +56,11 @@ So if you want to use float type division in Solidity, different size units have
 
 ### Bytes
 
-Another familiar data type which can be used raw byte data.
+Another familiar data type which can be used to store raw byte data. Bytes is essentially a dynamic array of bytes. `byte` is an alias for `bytes1` which is an array of 1 byte. The maximum bytes array is `bytes32`.
+
+```solidity
+bytes32 foo = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+```
 
 ### Strings
 
@@ -88,10 +92,8 @@ Address also comes with data types members which are `balance` and `transfer`. I
 pragma solidity ^0.4.11;
 
 contract Address {
-    address me = 0xca35b7d915458ef540ade6068dfe2f44e8fa733c;
-
-    function getBalance() public constant returns (uint256) {
-        return me.balance;
+    function getBalance(address _address) public constant returns (uint256) {
+        return _address.balance;
     }
 }
 ```
@@ -108,8 +110,8 @@ contract Enums {
     ActionChoices choice;
     ActionChoices constant defaultChoice = ActionChoices.GoStraight;
 
-    function setGoStraight() {
-        choice = ActionChoices.GoStraight;
+    function setSitStill() {
+        choice = ActionChoices.SitStill;
     }
 
     // Since enum types are not part of the ABI, the signature of "getChoice"
