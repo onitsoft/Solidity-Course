@@ -1,9 +1,5 @@
 # Lesson 4 - Data Types
 
-## Value vs. reference data types
-
-A data type is a value type if it holds the data within its own memory allocation. On the other hand, a reference type contains a pointer to another memory location that holds the data.
-
 ## Value types
 
 The following types are also called value types because variables of these types will always be passed by value, i.e. they are always copied when they are used as function arguments or in assignments.
@@ -130,6 +126,8 @@ contract Enums {
 ```
 
 ## Reference types
+
+Complex types, i.e. types which do not always fit into 256 bits have to be handled more carefully than the value-types we have already seen. Since copying them can be quite expensive, we have to think about whether we want them to be stored in memory (which is not persisting) or storage (where the state variables are held).
 
 ## Data locations
 
