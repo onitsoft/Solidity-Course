@@ -16,7 +16,7 @@ bool foo = true;
 
 `int` - signed integer - values from minimum of (-2^255)/2 and maximum of (2^255)/2-1;
 
-`uint` - unsigned integers of various sizes - max value of 2^256.
+`uint` - unsigned integers - max value of 2^256.
 
 Keywords `uint` and `int` go up in increments of 8 from the lowest value of 8 to the maximum value of 256. `uint` and `int` by default are aliases for `uint256` and `int256`, respectively.
 
@@ -52,7 +52,7 @@ contract Integers {
 
 However, fixed point numbers are not fully supported by Solidity yet. They can be declared, but cannot be assigned to or from.
 
-So if you want to use float type division in Solidity, different size units will be have to be used unfortunately. We will have a look at an example of that in the next lesson.
+So if you want to use float type division in Solidity, different size units will be have to be used.
 
 ### Bytes
 
