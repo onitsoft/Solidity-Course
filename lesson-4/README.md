@@ -14,9 +14,9 @@ bool foo = true;
 
 ### Integers
 
-`int` - signed integer - values from minimum of (-2^255)/2 and maximum of (2^255)/2-1;
+`int` - signed integer - 255 bits are used to represent the value and 1 bit to denote the sign;
 
-`uint` - unsigned integers - max value of 2^256.
+`uint` - unsigned integers - all 256 bits are used to represent the value.
 
 Keywords `uint` and `int` go up in increments of 8 from the lowest value of 8 to the maximum value of 256 e.g. `int8`, `int16`, `uint16`, etc. `uint` and `int` by default are aliases for `uint256` and `int256`, respectively.
 
