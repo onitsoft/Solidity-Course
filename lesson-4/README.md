@@ -18,7 +18,7 @@ bool foo = true;
 
 `uint` - unsigned integers - max value of 2^256.
 
-Keywords `uint` and `int` go up in increments of 8 from the lowest value of 8 to the maximum value of 256. `uint` and `int` by default are aliases for `uint256` and `int256`, respectively.
+Keywords `uint` and `int` go up in increments of 8 from the lowest value of 8 to the maximum value of 256 e.g. `int8`, `int16`, `uint16`, etc. `uint` and `int` by default are aliases for `uint256` and `int256`, respectively.
 
 ```
 pragma solidity ^0.4.11;
