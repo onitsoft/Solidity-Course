@@ -2,7 +2,7 @@
 
 ## Value vs. reference data types
 
-A data type is a value type if it holds the data within its own memory allocation. A reference type contains a pointer to another memory location that holds the data.
+A data type is a value type if it holds the data within its own memory allocation. On the other hand, a reference type contains a pointer to another memory location that holds the data.
 
 ## Value types
 
