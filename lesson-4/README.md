@@ -186,7 +186,7 @@ contract CrowdFunding {
 
 ### Mappings
 
-Mappings can be seen as hashtables which are virtually initialized such that every possible key exists and is mapped to a value whose byte-representation is all zeros by default. But once initialized, it becomes to equal to the newly set value.
+Mappings can be seen as hashtables which are virtually initialized such that every possible key exists and is mapped to a value whose byte-representation is all zeros by default. But once initialized, it becomes equal to the newly set value.
 
 Mappings are only allowed for state variables (or as storage reference types in internal functions).
 
