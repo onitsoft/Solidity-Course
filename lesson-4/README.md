@@ -150,25 +150,9 @@ Remember, as a rule of thumb:
 - Function arguments are always in memory
 - Local variables always reference storage
 
-```solidity
-pragma solidity ^0.4.0;
-
-contract Mapping {
-    mapping(address => uint) balances;
-
-    function update(uint newBalance) {
-        balances[msg.sender] = newBalance;
-    }
-    
-    function getBalance() public constant returns (uint balance) {
-        return balances[msg.sender];
-    }
-}
-```
-
 ### Arrays
 
-Creating arrays with variable length in memory can be done using the new keyword. As opposed to storage arrays, it is not possible to resize memory arrays by assigning to the .length member. [More about it here](http://solidity.readthedocs.io/en/develop/types.html#arrays).
+Creating arrays with variable length in memory can be done using the new keyword. [More about it here](http://solidity.readthedocs.io/en/develop/types.html#arrays).
 
 ```
 pragma solidity ^0.4.0;
@@ -206,5 +190,19 @@ Mappings can be seen as hashtables which are virtually initialized such that eve
 
 Mappings are only allowed for state variables (or as storage reference types in internal functions).
 
+```solidity
+pragma solidity ^0.4.0;
 
+contract Mapping {
+    mapping(address => uint) balances;
+
+    function update(uint newBalance) {
+        balances[msg.sender] = newBalance;
+    }
+    
+    function getBalance() public constant returns (uint balance) {
+        return balances[msg.sender];
+    }
+}
+```
 
