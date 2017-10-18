@@ -206,3 +206,7 @@ contract Mapping {
 }
 ```
 
+## Resources
+
+- [Types section of official Solidity documentation](http://solidity.readthedocs.io/en/develop/types.html)
+
