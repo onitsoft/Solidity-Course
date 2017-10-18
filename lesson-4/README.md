@@ -157,8 +157,8 @@ Creating arrays with variable length in memory can be done using the new keyword
 ```
 pragma solidity ^0.4.0;
 
-contract C {
-    function f(uint len) {
+contract Arrays {
+    function newArr(uint len) {
         uint[] memory a = new uint[](7);
         bytes memory b = new bytes(len);
         // Here we have a.length == 7 and b.length == len
