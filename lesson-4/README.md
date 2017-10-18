@@ -152,7 +152,7 @@ Remember, as a rule of thumb:
 
 ### Arrays
 
-Creating arrays with variable length in memory can be done using the new keyword. [More about it here](http://solidity.readthedocs.io/en/develop/types.html#arrays).
+Creating arrays with variable length in memory can be done using the new keyword.
 
 ```
 pragma solidity ^0.4.0;
