@@ -59,6 +59,6 @@ Operators:
 Members:
 
 - `.length` returns size of the array.
-- `.push` works only for dynamic size arrays and can be used to append an element at the end of the array.
+- `.push` works only for dynamic storage arrays and bytes (not string). It appends an element at the end of the array. The function returns the new length.
 
 
