@@ -23,7 +23,7 @@
 Operators:
 
 - Comparisons: `<=`, `<`, `==`, `!=`, `>=`, `>` (evaluate to bool)
-- Bit operators: `&`, `|`, `^` (bitwise exclusive or), `~` (bitwise negation), `<<` (left shift), `>>` (right shift)
+- Bit operators: `&` (bitwise AND), `|` (bitwise OR), `^` (bitwise exclusive or, XOR), `~` (bitwise negation), `<<` (left shift), `>>` (right shift)
 - Index access: `x[k]` for `0 <= k < len(x)` returns the k-th byte (read-only).
 
 Members:
