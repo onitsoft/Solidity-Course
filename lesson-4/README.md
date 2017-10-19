@@ -48,7 +48,7 @@ contract Integers {
 
 `fixed` - signed fixed point number;
 
-`ufixed` - unsigned fixed point number of various sizes.
+`ufixed` - unsigned fixed point number.
 
 However, fixed point numbers are not fully supported by Solidity yet. They can be declared, but cannot be assigned to or from.
 
