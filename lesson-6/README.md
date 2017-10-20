@@ -23,15 +23,15 @@ Below is an example of a function with one return parameter. Note how `return` k
 variable `m` and declare it within the function.
 
 ```
-function oneOutputValue(uint _input1) returns (uint m) {
+function oneOutputExample() returns (uint m) {
     m = m * 3;
 }
 ```
 
-Varibles can be omitted in returns. Then we have to explicitly declare the `return` statement.
+Variables can be omitted in returns. Then we have to explicitly declare the `return` statement.
 
 ```
-function oneOutputValue(uint _input1) returns (uint) {
+function oneOutputExample2() returns (uint) {
     return m * 3;
 }
 ```
@@ -39,7 +39,7 @@ function oneOutputValue(uint _input1) returns (uint) {
 Example of two output values:
 
 ```
-function twoOutputValues(uint _input1, uint _input2) returns (uint s, uint p){
+function twoOutputsExample(uint _input1, uint _input2) returns (uint s, uint p){
     sum = _input1 + _input2;
     product = _input1 * _input2;
     s = sum;
@@ -50,7 +50,7 @@ function twoOutputValues(uint _input1, uint _input2) returns (uint s, uint p){
 Example of returning multiple values when omitting variable names to be returned.
 
 ```
-function sumAndProduct2(uint _input1, uint _input2) returns (uint, uint){
+function twoOutputsExample2(uint _input1, uint _input2) returns (uint, uint){
     sum = _input1 + _input2;
     product = _input1 * _input2;
     return (sum, product);
