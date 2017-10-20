@@ -106,15 +106,15 @@ contract PureViewConstant {
 	    foo = !foo;
 	}
 	
-	function readFromStorageConstant() constant returns(bool) {
+	function readFromStorageConstant() constant returns (bool) {
 	    return foo;
 	}
 	
-	function readFromStorageView() view returns(bool) {
+	function readFromStorageView() view returns (bool) {
 	    return foo;
 	}
 	
-	function pureFunction(bool bar) pure returns(bool) {
+	function pureFunction(bool bar) pure returns (bool) {
 	    return !bar;
 	}
 }
