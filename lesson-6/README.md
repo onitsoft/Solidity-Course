@@ -8,7 +8,6 @@ As in Javascript, functions may take parameters as input. Note how you also have
 
 ```
 function twoInputs(uint _input1, address _input2) {
-   // Initialize state variables
    stateParam1 = _input1;
    stateParam2 = _input2;
 }
