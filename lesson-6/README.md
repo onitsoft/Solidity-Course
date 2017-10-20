@@ -23,7 +23,7 @@ Below is an example of a function with one return parameter. Note how `return` k
 variable `m` and declare it within the function.
 
 ```
-function oneOutputExample() returns (uint m) {
+function oneOutputExample(uint m) returns (uint m) {
     m = m * 3;
 }
 ```
@@ -31,7 +31,7 @@ function oneOutputExample() returns (uint m) {
 Variables can be omitted in returns. Then we have to explicitly declare the `return` statement.
 
 ```
-function oneOutputExample2() returns (uint) {
+function oneOutputExample2(uint m) returns (uint) {
     return m * 3;
 }
 ```
