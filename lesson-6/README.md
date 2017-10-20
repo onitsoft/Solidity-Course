@@ -59,7 +59,7 @@ function twoOutputsExample2(uint _input1, uint _input2) returns (uint, uint){
 
 ## Calling functions
 
-Functions can be called using either positional arguments or as keyword arguments when passed as JSON object.
+Functions can be called using either positional or keyword arguments which are passed as a JSON object.
 
 ```
 function someFunction(uint key, uint value) {
@@ -80,7 +80,7 @@ Since Solidity version `0.4.16` there are two function types to keep in mind - `
 
 ```
 function readFromStorageView() view returns (bool) {
-	return someVar;
+	return foo;
 }
 ```
 
