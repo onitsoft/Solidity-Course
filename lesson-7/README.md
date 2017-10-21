@@ -10,7 +10,7 @@ For state variables, `external` is not possible and the default is `internal`.
 
 External functions are part of the contract interface, which means they can be called from other contracts and via transactions. An external function `f` cannot be called internally (i.e. f() does not work, but this.f() works since it makes an actual `CALL` in Solidity sending message to a contract). External functions are sometimes more efficient when they receive large arrays of data.
 
-In example below, both functions return equal size array. In this case public function uses 261 in comparison to only 496 gas in external function.
+In example below, both functions return equal size array. In this case public function uses 496 in comparison to only 261 gas in external function.
 
 ```
 pragma solidity^0.4.16;
