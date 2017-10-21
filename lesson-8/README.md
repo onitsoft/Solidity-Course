@@ -22,7 +22,7 @@ contract ERC20 {
 	// Send _value amount of tokens from address _from to address _to
 	function transferFrom(address _from, address _to, uint _value) returns (bool success);
 
-    // Allow _spender to withdraw from your account, multiple times, up to the _value amount.
+	// Allow _spender to withdraw from your account, multiple times, up to the _value amount.
 	// If this function is called again it overwrites the current allowance with _value.
 	function approve(address _spender, uint _value) returns (bool success);
 
