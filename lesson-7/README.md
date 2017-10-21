@@ -1,6 +1,6 @@
 # Lesson 7 - Visibility of variables and functions
 
-There are four types of visibilities for functions and state variables.
+There are four types of visibilities for functions and state variables. Visibility declares what level of visibility a variable or function has within and outside the contract.
 
 Functions can be specified as being `external`, `public`, `internal` or `private`, where the default is `public`.
 
