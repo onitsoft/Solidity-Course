@@ -108,10 +108,10 @@ contract ChattyInherited is Chatty {
         //string publicStr2 = Chatty.publicStr;
         
         // will work because internal is visibile for derived contracts too
-        //string internal internalStr = "publicStr";
+        //string internalStr = Chatty.internalStr;
         
         // won't work because private is only visible for the contract they are defined in
-        //string private privateStr = "publicStr";
+        //string privateStr = Chatty.privateStr;
     }
 }
 ```
