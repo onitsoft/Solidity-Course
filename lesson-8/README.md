@@ -4,7 +4,7 @@ The ERC20 token standard describes the functions and events that an Ethereum tok
 
 In other words, you have to implement all the functions that are described in ERC20 Token Standard Interface and make them visible to the public. This is what users will interact with and what is essentially a token. 
 
-The reason this standard exists is so that every token that implements this standard follows the same naming convention. And by doing so make it easy for developers to interact with different coins.
+The reason this standard exists is so that every token that implements this standard follows the same naming convention. And by doing so make it easy for developers to interact with different coins. It also makes it easier for wallets to handle different coins as they know that once a token is ERC20 compliant it will follow certain convention and thus will behave in predictable ways.
 
 ## The ERC20 Token Standard Interface
 
