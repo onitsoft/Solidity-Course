@@ -13,7 +13,7 @@ Full steps can be found in the instructional video but these are the provisional
 5. Adjust `migrations/2_deploy_contracts.js` to only leave `DummyToken.sol` to be deployed.
 6. Make sure testrpc node is running. It can be launched via `testrpc` command from a new terminal window.
 7. From Truffle project root compile the contracts by typing `truffle compile`.
-8. Then deploy the contract with `truffle deploy`.
+8. Then deploy the contract with `truffle deploy`. You can also use `truffle migrate` just the same.
 
 ## Using Truffle console
 

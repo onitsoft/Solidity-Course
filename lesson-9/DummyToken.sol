@@ -6,7 +6,7 @@ contract DummyToken {
 	uint supply;
 
 	// Get the total token supply in circulation
-	function totalSupply() constant returns (uint totalSupply) {
+	function totalSupply() constant returns (uint) {
 		return supply;
 	}
 

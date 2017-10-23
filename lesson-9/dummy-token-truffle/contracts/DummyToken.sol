@@ -1,4 +1,4 @@
-pragma solidity ^0.4.18;
+pragma solidity ^0.4.15;
 
 contract DummyToken {
 	mapping(address => uint) balances;
@@ -6,7 +6,7 @@ contract DummyToken {
 	uint supply;
 
 	// Get the total token supply in circulation
-	function totalSupply() constant returns (uint totalSupply) {
+	function totalSupply() constant returns (uint) {
 		return supply;
 	}
 
