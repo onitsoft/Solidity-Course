@@ -1,7 +1,6 @@
 pragma solidity ^0.4.18;
 
 contract DummyToken {
-
 	mapping(address => uint) balances;
 	mapping(address => mapping(address => uint)) approved;
 	uint supply;
@@ -65,9 +64,5 @@ contract DummyToken {
 	function mine() {
 		balances[msg.sender] += 1;
 		supply += 1;
-	}
-
-	function myBalance(uint) {
-		return balances[msg.sender];
 	}
 }
