@@ -9,12 +9,12 @@ contract DummyToken {
 	// Get the total token supply in circulation
 	function totalSupply() constant returns (uint totalSupply) {
 		return supply;
-	};
+	}
 
 	// Get the account balance of another account with address _owner
 	function balanceOf(address _owner) constant returns (uint balance) {
 		return balances[_owner];
-	};
+	}
 
 	// Send _value amount of tokens to address _to
 	function transfer(address _to, uint _value) returns (bool success) {
@@ -25,7 +25,7 @@ contract DummyToken {
 		balances[_to] += _value;
 
 		return true;
-	};
+	}
 
 	// Send _value amount of tokens from address _from to address _to
 	function transferFrom(address _from, address _to, uint _value) returns (bool success) {
@@ -37,7 +37,7 @@ contract DummyToken {
 		balances[_to] += _value;
 
 		return true;
-	};
+	}
 
 	// Allow _spender to withdraw from your account, multiple times, up to the _value amount.
 	// If this function is called again it overwrites the current allowance with _value.
@@ -48,12 +48,12 @@ contract DummyToken {
 		approve[msg.sender][_spender] = _value;
 
 		return true;
-	};
+	}
 
 	// Returns the amount which _spender is still allowed to withdraw from _owner
 	function allowance(address _owner, address _spender) constant returns (uint remaining) {
 		return approved[_owner][_spender];
-	};
+	}
 
 	// Triggered when tokens are transferred.
 	event Transfer(address indexed _from, address indexed _to, uint _value);
