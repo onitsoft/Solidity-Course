@@ -1,9 +1,9 @@
-pragma solidity ^0.4.16;
+pragma solidity ^0.4.18;
 
 contract DummyToken {
 
 	mapping(address => uint) balances;
-	mapping(address => mapping(address => uint)) approved; 
+	mapping(address => mapping(address => uint)) approved;
 	uint supply;
 
 	// Get the total token supply in circulation
@@ -18,7 +18,8 @@ contract DummyToken {
 
 	// Send _value amount of tokens to address _to
 	function transfer(address _to, uint _value) returns (bool success) {
-		if (_value <= 0 || balances[msg.sender] < _value) return false; // unsuccessful transaction
+		// Unsuccessful transaction
+		if (_value <= 0 || balances[msg.sender] < _value) return false; 
 
 		balances[msg.sender] -= _value;
 		balances[_to] += _value;
@@ -28,6 +29,7 @@ contract DummyToken {
 
 	// Send _value amount of tokens from address _from to address _to
 	function transferFrom(address _from, address _to, uint _value) returns (bool success) {
+		// Unsuccessful transaction
 		if (_value <= 0 || allowance[_from][msg.sender] < _value || balances[_from] < _value) return false;
 
 		balances[_from] -= _value;
