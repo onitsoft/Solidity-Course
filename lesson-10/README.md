@@ -8,6 +8,10 @@ When events are called, they cause the event arguments to be stored in the trans
 
 `indexed` parameter allows to filter for specific values of indexed arguments. Up to three parameters can receive the attribute `indexed` in an event.
 
+## Full example
+
+Full example can be found at [dummy-token-truffle](https://github.com/onitsoft/BitDegree-Solidity-Course/tree/master/lesson-10/dummy-token-truffle) directory. Make sure to run `testrpc` node by typing `testrpc` in new terminal window. Then from within the `dummy-token-truffle` directory compile the contract via `truffle compile`, then deploy it with `truffle migrate` and then interact with it with `truffle console`.
+
 ## Resources
 
 - http://solidity.readthedocs.io/en/develop/contracts.html#events
