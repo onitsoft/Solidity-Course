@@ -1,6 +1,6 @@
 # Lesson 10 - Events and logging
 
-Events enable the usage of the EVM logging facilities. These events can then be used in JavaScript callbacks in the user interface of a dApp, which listen for these events.
+Events enable the usage of the EVM logging facilities. These events can be used in JavaScript callbacks in the user interface of a dApp, which listen for these events.
 
 In other words, events are dispatched signals the smart contracts can fire. And your application can listen to these events and act accordingly.
 
