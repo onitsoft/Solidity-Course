@@ -6,6 +6,8 @@ In other words, events are dispatched signals the smart contracts can fire. And 
 
 When events are called, they cause the event arguments to be stored in the transaction’s log - a special data structure in the blockchain. These logs are associated with the address of the contract and will be incorporated into the blockchain and stay there as long as a block is accessible. As of now in regards to how blockchain works on Ethereum, it is forever. This might change in the future implementations of Ethereum.
 
+## `indexed` attribute
+
 `indexed` parameter allows to filter for specific values of indexed arguments. Up to three parameters can receive the attribute `indexed` in an event.
 
 ## Full example
