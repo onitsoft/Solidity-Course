@@ -4,7 +4,7 @@ In classical object-oriented programming **inheritance** refers to a case where 
 
 **Polymorphism** refers to changing the behavior of a superclass in the subclass.
 
-The same principles apply to inheritance and polymorphism when developing Ethereum smart contracts and the general inheritance system is very similar to Python’s or Java's, especially concerning multiple inheritance.
+The same principles apply to inheritance and polymorphism when developing Ethereum smart contracts, and the general inheritance system is very similar to Python’s or Java's, especially concerning multiple inheritance.
 
 When a contract inherits from multiple contracts, only a single contract is created on the blockchain, and the code from all the base contracts is copied into the created contract.
 
