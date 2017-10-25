@@ -51,7 +51,7 @@ contract Thing {
         color = _color;
         cost = _cost;
     }
-    
+   
     function getColor() public view returns (string) { return color; }
     function getCost() public view returns (uint) { return cost; }
 }
