@@ -58,7 +58,11 @@ contract Thing {
 
 contract ToyotaCar is Mortal, Thing, Car {
     // Due to inheritance we inherit all the properties of Mortal, Thing and Car contracts
-    function ToyotaCar(string _color, uint _cost) Thing(_color, _cost) Car("Toyota") {}
+    function ToyotaCar(string _color, uint _cost) Thing(_color, _cost) Car("Toyota") {
+        
+    }
+    
+    function setColor(string _color) { color = _color; }
     
     // We can override Car methods via polymorphism
     function makeNoise() public pure returns(string) { return "HAROOOM!!!"; }
