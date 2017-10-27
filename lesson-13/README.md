@@ -69,6 +69,7 @@ contract Fund {
 
 Restrict the amount of Ether (or other tokens) that can be stored in a smart contract. If your source code, the compiler or the platform has a bug, these funds may be lost. If you want to limit your loss, limit the amount of Ether. Also, attackers are less likely to try to mess with contracts with low balances.
 
+```
 contract LimitFunds {
 	uint LIMIT = 5000;
 
