@@ -50,7 +50,7 @@ contract AccessRestriction {
 
 Checks-Effects-Interactions pattern is a simple and well recommended coding pattern where you first check all the pre-conditions by using `assert` and `require`. Then, make changes to contract’s state. Finally, interact with other contracts via external calls.
 
-Consider the example below which introduces attack surface for a re-entrancy attack. In this example the recipient could call `withdraw()` multiple times before `withdraw` is finished executing, and as a result get multiple refunds.
+Consider the example below which introduces attack surface for a re-entrancy attack. In this example the recipient could call `withdraw()` multiple times before `withdraw()` is finished executing, and as a result get multiple refunds.
 
 ```
 // Bad coe, do not use!
@@ -65,7 +65,7 @@ contract Fund {
 }
 ```
 
-By using Checks-Effects-Interactions pattern we can avoid this problem, as in the example below.
+By using Checks-Effects-Interactions pattern we can avoid this problem, as in the example below. Before transferring the funds we make sure that the receiver has any funds to receive. If he/she does, we set his/her balance to 0, and only then make the token transfer. So even if `withdraw()` is called again before token transfer is finished executing, his balance will already be set to 0, unlike in the previous example.
 
 ```
 contract Fund {
