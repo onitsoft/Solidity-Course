@@ -14,7 +14,7 @@
 
 ### Fail early, use exceptions
 
-One way to ensure safer contracts is to fail early and to fail as loud as possible. This can be done by using exceptions properly. In the example below we use `require` and `assert` exception handlers to check that `name` argument is valid, and that the corresponding record in `payout` maps to a non-zero value.. 
+One way to ensure safer contracts is to fail early and to fail as loud as possible. This can be done by using exceptions properly. In the example below we use `require` and `assert` exception handlers to check that `name` argument is valid, and that the corresponding record in `payout` maps to a non-zero value.
 
 ```
 contract FailLoudEarly {
@@ -29,7 +29,7 @@ contract FailLoudEarly {
 }
 ```
 
-Function modifiers can be especially useful to make code more readable and still allow it to fail early and loud. In the example below we have `onlyBy` modifier which is used by `changeOwner` function to only allow the owner of the contract change to change it to another owner. If non-owner tries to call `changeOwner` function, it will immediately throw an exception and revert any changes made to the contract state (in this case there are none).
+Function modifiers can be especially useful to make code more readable and still allow it to fail early and loud. In the example below we have `onlyBy` modifier which is used by `changeOwner` function to only allow the owner of the contract change it to another owner. If non-owner tries to call `changeOwner` function, it will immediately throw an exception and revert any changes made to the contract state (in this case there are none).
 
 ```
 contract AccessRestriction {
