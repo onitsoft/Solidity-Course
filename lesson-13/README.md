@@ -4,11 +4,11 @@
 
 ## Common pitfalls
 
-- Private information: Everything you use in a smart contract is publicly visible, even local variables and state variables marked `private`.
-- Re-entrancy: Do not perform external calls in contracts before making sure that all internal works has been finished.
-- Loops can trigger gas limit: Loops that do not have a fixed number of iterations, for example, loops that depend on storage values, have to be used carefully since they can grow in size and make gas consumption hit the limits.
-- Ether send can fail: When sending money, your code should always be prepared for the send function to fail.
-- Timestamp dependency: Miners can manipulate timestamps so do not use them in critical parts of the code.
+- **Private information**: Everything you use in a smart contract is publicly visible, even local variables and state variables marked `private`.
+- **Re-entrancy**: Do not perform external calls in contracts before making sure that all internal works has been finished.
+- **Loops can trigger gas limit**: Loops that do not have a fixed number of iterations, for example, loops that depend on storage values, have to be used carefully since they can grow in size and make gas consumption hit the limits.
+- **Ether send can fail**: When sending money, your code should always be prepared for the send function to fail.
+- **Timestamp dependency**: Miners can manipulate timestamps so do not use them in critical parts of the code.
 
 ## Security recommendations
 
