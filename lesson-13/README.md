@@ -135,7 +135,7 @@ Another problematic area with the above example is potential gas limit. Imagine 
 The best way to go about the gas limit problem is to separate the payout and calculation functions and first do the payouts calculation, and only then do the payouts. Then, if either one fails, at least not as many resources will be lost.
 
 ```
-contract ProblematicCode {
+contract GoodCode {
 	address[] affiliates;
 	mapping(address => uint) payouts;
 
