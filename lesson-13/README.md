@@ -4,7 +4,7 @@
 
 ## Common pitfalls
 
-- **Private information**: Everything you use in a smart contract is publicly visible, even local variables and state variables marked `private`.
+- **Private information**: Everything you use in a smart contract is publicly visible, even local variables and state variables marked `private`. Read access can be hardened by using encryption and only `read` access can be truly limited.
 - **Re-entrancy**: A type of attack where functions can be called repeatedly, before the first invocation of the function is finished. Do not perform external calls in contracts before making sure that all internal works has been finished.
 - **Loops can trigger gas limit**: Loops that do not have a fixed number of iterations, for example, loops that depend on storage values, have to be used carefully since they can grow in size and make gas consumption hit the limits.
 - **Ether send can fail**: When sending money, your code should always be prepared for the send function to fail.
