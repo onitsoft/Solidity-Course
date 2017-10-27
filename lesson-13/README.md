@@ -65,7 +65,7 @@ contract Fund {
 }
 ```
 
-By using Checks-Effects-Interactions pattern we can avoid this problem, as in the example below. Before transferring the funds we make sure that the receiver has any funds to receive. If he/she does, we set his/her balance to 0, and only then make the token transfer. So even if `withdraw()` is called again before token transfer is finished executing, his balance will already be set to 0, unlike in the previous example.
+By using Checks-Effects-Interactions pattern we can avoid this problem, as in the example below. Before transferring the funds we make sure that the receiver has any funds to receive. If he/she does, we set his/her balance to 0, and only then make the token transfer. So even if `withdraw()` is called again before token transfer is finished executing, the corresponding account balance will already be set to 0, unlike in the previous example.
 
 ```
 contract Fund {
