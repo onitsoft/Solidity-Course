@@ -128,7 +128,7 @@ contract ProblematicCode {
 }
 ```
 
-While the above example looks simple enough, it hides two potential flaws. First, since `uint8` is the lowest sufficient daa type to hold value 0, this is what variable `i` will be initialized to. However, since `uint8` is only made up of 8 bits, it can only represent 255 distinct values. Thus, if `affiliates` array goes over 255 elements, we are going to experience integer overflow and as a result never terminate the loop. This can be fixed by using by declaring `uint` which defaults to 256 bits and thus can store huge values.
+While the above example looks simple enough, it hides two potential flaws. First, since `uint8` is the lowest sufficient data type to hold value 0, this is what variable `i` will be initialized to. However, since `uint8` is only made up of 8 bits, it can only represent 255 distinct values. Thus, if `affiliates` array goes over 255 elements, we are going to experience integer overflow and as a result never terminate the loop. This can be fixed by using by declaring `uint` which defaults to 256 bits and thus can store huge values.
 
 Another problematic area with the above example is potential gas limit. Imagine a scenario where we are calculating payout and sending it out for hundreds of affiliates. We have processed 90% of them but then ran out of gas. As a result, all the work we have done up to that point will be for naught because Ethereum Virtual Machine will revert all the changes to the state in which it was before calling this function.
 
