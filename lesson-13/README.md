@@ -48,7 +48,7 @@ contract AccessRestriction {
 
 ### Make use of Checks-Effects-Interactions pattern
 
-Checks-Effects-Interactions pattern is a simple and well recommended coding pattern where you first check all the pre-conditions by using `assert` and `require. Then, make changes to contract’s state. Finally, interact with other contracts via external calls.
+Checks-Effects-Interactions pattern is a simple and well recommended coding pattern where you first check all the pre-conditions by using `assert` and `require`. Then, make changes to contract’s state. Finally, interact with other contracts via external calls.
 
 Consider the example below which introduces attack surface for a re-entrancy attack. In this example the recipient could call `withdraw()` multiple times before `withdraw` is finished executing, and as a result get multiple refunds.
 
