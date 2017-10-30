@@ -54,6 +54,6 @@ Take note that functions that alter the state of the blockchain such as `mine()`
 
 Testnets such as Rinkeby are essentially the same as the Ethereum mainnet. The key difference is that coins or tokens on testnet have no real value. Plus, the consensus algorithm which is used by the blockchain is slightly different and on Rinkeby only a few special nodes can mine coins. You can retrieve them via a faucet which essentially is a website which dispenses Ethereum to your account if you ask for it. 
 
-In short, testnets act as a staging environment for contracts. The deployment process is really similar to the one as when deploying on mainnet. The key is to add another network to `truffle.js` file and use `truffle migrate --network rinkeby` command for deployment. And also use Rinkeby instructions for the [Geth setup](https://www.rinkeby.io/#geth).
+In short, testnets act as a staging environment for contracts. The deployment process is really similar to the one as when deploying on mainnet. The key is to add another network to `truffle.js` file as in the [example](https://github.com/onitsoft/BitDegree-Solidity-Course/blob/master/lesson-14/dummy-token-truffle/truffle.js) and use `truffle migrate --network rinkeby` command for deployment. And also use Rinkeby instructions for the [Geth setup](https://www.rinkeby.io/#geth).
 
- 
+
