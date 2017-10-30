@@ -10,7 +10,7 @@ This lesson is all about deployment on Ethereum mainnet using Truffle and geth. 
 4. From within new terminal window type `geth account new`. Then follow the instructions. Try to do Step 3 again once done.
 5. Transfer some Ether ($20 worth should be enough) to your Ether account that is setup on Geth.
 6. Go to Truffle project directory and edit `truffle.js` by adding additional `live` entry to `networks` dictionary. Find full code in "`truffle.js` config" section below.
-7. Once blockchain is synchronized, and there is some Ether in the balance, from within the same Truffle project directory execute commands `truffle compile` and then `truffle migrate --network live --reset`.
+7. Only once blockchain is synchronized, and there is some Ether in the balance execute this step. From within the same Truffle project directory execute commands `truffle compile` and then `truffle migrate --network live --reset`. This will cost real Ether.
 
 ## `truffle.js` config
 
