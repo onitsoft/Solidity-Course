@@ -45,7 +45,7 @@ Using Geth to interact with the deployed smart contract is slightly trickier tha
 2. Copy the contract's ABI, the entire array, from the same `build/contract/<ContractName>.json` file and `abi` field. Make sure to remove all new lines and make the entire ABI copied into one line.
 3. Open geth console by typing `geth attach`.
 4. From within the console store ABI into variable `abi` as such `var abi = JSON.parse('<COPIED_ABI_DEFINITION>')`.
-5. Then get instance of the contract by typing `var contract = abi.at('<CONTRACT_ADDRESS>')`.
+5. Then get instance of the contract by typing `var contract = eth.contract(abi).at('<CONTRACT_ADDRESS>')`.
 6. Execute functions on smart contract by typing `contract.<FUNCTION_NAME>()`.
 
 Take note that functions that alter the state of the blockchain such as `mine()` will cost real Ether to execute. However, functions that only return a value such as `totalSupply()` will cost nothing to execute.
