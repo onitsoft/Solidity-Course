@@ -1,1 +1,1 @@
-# BitDegree-Solidity-Course
+# Solidity-Course by n.exchange
