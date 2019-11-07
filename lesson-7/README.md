@@ -32,7 +32,7 @@ Public functions are part of the contract interface and can be either called int
 
 ## `internal`
 
-Interval functions and state variables can only be accessed internally (i.e. from within the current contract or contracts deriving from it), without using `this`. 
+Internal functions and state variables can only be accessed internally (i.e. from within the current contract or contracts deriving from it), without using `this`. 
 
 `internal` can be compared to `protected` visibility in object-oriented languages such as Java.
 
